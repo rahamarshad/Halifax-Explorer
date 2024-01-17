@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entertainment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Back Button -->
+<div class="home-button-container">
+  <a href="categories.html" class="button-home">Back</a>
+</div>
+<div class="category-container">
+  <h2>Entertainment</h2>
+
+  <button class="category-button" onclick="toggleVisibility('entertainment-options')">Entertainment Options</button>
+  <div id="entertainment-options" class="category-content" style="display:none;">
+    <a href="https://maps.app.goo.gl/2SWM1AcamQyWTDAJ8?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Trapped Halifax</button></a>
+    <a href="https://maps.app.goo.gl/kxEY8rxaFmeqPzf56?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Cineplex Cinemas Park Lane</button></a>
+    <a href="https://maps.app.goo.gl/FN7V7vqgCWGWbCMq9?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">HaliMac Axe Throwing Halifax</button></a>
+    <a href="https://maps.app.goo.gl/vgvKwgWCTrChdzua7?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Emera Oval</button></a>
+  </div>
+</div>
+
+<script>
+  function toggleVisibility(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>

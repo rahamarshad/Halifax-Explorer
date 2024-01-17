@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Well-being and Nature</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Back Button -->
+<div class="home-button-container">
+  <a href="categories.html" class="button-home">Back</a>
+</div>
+<div class="category-container">
+  <h2>Well-being and Nature</h2>
+
+  <button class="category-button" onclick="toggleVisibility('parks')">Parks</button>
+  <div id="parks" class="category-content" style="display:none;">
+    <a href="https://maps.app.goo.gl/131b5gXtLTsXzv7eA?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Point Pleasant Park</button></a>
+    <a href="https://maps.app.goo.gl/xxVUd3y95H498utE6?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Conrose Park</button></a>
+    <a href="https://maps.app.goo.gl/7PKd2dd8A3iNQERz9?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Public Gardens</button></a>
+    <a href="https://maps.app.goo.gl/7nLnHJchQ8H6igUs6?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Long Lake Provincial Park</button></a>
+  </div>
+
+  <button class="category-button" onclick="toggleVisibility('fitness')">Fitness</button>
+  <div id="fitness" class="category-content" style="display:none;">
+    <a href="https://maps.app.goo.gl/59A3dHh6rMRsQ4MN8?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Spinco</button></a>
+    <a href="https://maps.app.goo.gl/H8cSeq3aZ7PbEQ8Y8?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Queensberry Rules Boxing Studio</button></a>
+    <a href="https://maps.app.goo.gl/TAMPh8kspa1CAagV9?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Shanti Hot Yoga Studio</button></a>
+    <a href="https://maps.app.goo.gl/5FFmRqVwbEPbWuRaA?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Oxygen Halifax</button></a>
+  </div>
+</div>
+
+<script>
+  function toggleVisibility(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>

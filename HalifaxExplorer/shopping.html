@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping and Gastronomic Adventures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Back Button -->
+<div class="home-button-container">
+  <a href="categories.html" class="button-home">Back</a>
+</div>
+<div class="category-container">
+  <h2>Shopping and Gastronomic Adventures</h2>
+
+  <button class="category-button" onclick="toggleVisibility('secondhand-thrift')">Secondhand/Thrift</button>
+  <div id="secondhand-thrift" class="category-content" style="display:none;">
+    <a href="https://maps.app.goo.gl/XTiUvgtpDB79Mivm7?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">The Loot Vintage</button></a>
+    <a href="https://maps.app.goo.gl/DMbmkTeyBkEZJkSx9?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Mevyn Sustainable Apparel</button></a>
+    <a href="https://maps.app.goo.gl/QJCXhdTvN9iEj3rf8?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Brilliant Clothing Boutique</button></a>
+    <a href="https://maps.app.goo.gl/erMrYpftLiijySQJA?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">The Grateful Wardrobe</button></a>
+  </div>
+
+  <button class="category-button" onclick="toggleVisibility('local-coffee-shops')">Local Coffee Shops</button>
+  <div id="local-coffee-shops" class="category-content" style="display:none;">
+    <a href="https://maps.app.goo.gl/jyXLy31cCCHpNwpc9?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Dilly Dally Coffee Cafe</button></a>
+    <a href="https://maps.app.goo.gl/ciNHAjx2AeYzKcYm9?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Uncommon Grounds</button></a>
+    <a href="https://maps.app.goo.gl/2jamK2y81FMqFKgw8?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Wired Monk</button></a>
+    <a href="https://maps.app.goo.gl/21DwpwSuPFqeTaZa8?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Bliss Caffeine Bar</button></a>
+  </div>
+
+  <button class="category-button" onclick="toggleVisibility('restaurants')">Restaurants</button>
+  <div id="restaurants" class="category-content" style="display:none;">
+    <a href="https://maps.app.goo.gl/bPaffiAx2geQ8eir6?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">The Bicycle Thief</button></a>
+    <a href="https://maps.app.goo.gl/KMpZBjMoJKExkEW2A?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Sea Smoke</button></a>
+    <a href="https://maps.app.goo.gl/gVxQKmF5TzS3x8Lf6?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Rasa</button></a>
+    <a href="https://maps.app.goo.gl/n7DK7b4kvEKDqgbY9?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Antojos</button></a>
+  </div>
+
+  <button class="category-button" onclick="toggleVisibility('grocery-excursions')">Grocery Excursions</button>
+  <div id="grocery-excursions" class="category-content" style="display:none;">
+    <a href="https://maps.app.goo.gl/uioGwBezikR9qMRs9?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Sobeys (Queen St, Mumford)</button></a>
+    <a href="https://maps.app.goo.gl/2ioqChriGYbp6bwj8?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Superstore (Barrington, Quinpool)</button></a>
+    <a href="https://maps.app.goo.gl/U4FZMuiSVjbdHrtZA?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Pete’s Frootique</button></a>
+    <a href="https://maps.app.goo.gl/LxsA2BWQ6r9hnCoi7?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Walmart (Mumford)</button></a>
+  </div>
+
+</div>
+
+<script>
+  function toggleVisibility(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>

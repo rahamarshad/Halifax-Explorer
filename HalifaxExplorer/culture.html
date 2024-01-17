@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture and Contribution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Back Button -->
+<div class="home-button-container">
+  <a href="categories.html" class="button-home">Back</a>
+</div>
+<div class="category-container">
+  <h2>Culture and Contribution</h2>
+
+  <button class="category-button" onclick="toggleVisibility('cultural-sites')">Cultural Sites</button>
+  <div id="cultural-sites" class="category-content" style="display:none;">
+    <a href="https://maps.app.goo.gl/3tSwXzps4TfjnEZK8?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Maritime Museum of the Atlantic</button></a>
+    <a href="https://maps.app.goo.gl/uLq9uzTwdLoyNxpN8?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Art Gallery of Nova Scotia</button></a>
+    <a href="https://maps.app.goo.gl/g7Vh9FgiKd6fzXwU7?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Halifax Citadel National Historic Site</button></a>
+    <a href="https://maps.app.goo.gl/AH9k1cofXwJrGesr5?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Canadian Museum of Immigration at Pier 21</button></a>
+  </div>
+
+  <button class="category-button" onclick="toggleVisibility('volunteering-opportunities')">Volunteering Opportunities</button>
+  <div id="volunteering-opportunities" class="category-content" style="display:none;">
+    <a href="https://maps.app.goo.gl/qYEBYpEewcdgPD1T9?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">IWK</button></a>
+    <a href="https://maps.app.goo.gl/3cwi5xyCdmyk5vFM7?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Adsum House</button></a>
+    <a href="https://maps.app.goo.gl/xBSvnq4ptTJ5igwXA?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Halifax Public Libraries</button></a>
+    <a href="https://maps.app.goo.gl/TgKRssTg7NEHQj3EA?g_st=ic" target="_blank" rel="noopener noreferrer"><button class="list-button">Salvation Army Men’s Shelter</button></a>
+  </div>
+</div>
+
+<script>
+  function toggleVisibility(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>
